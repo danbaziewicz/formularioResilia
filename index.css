@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(255, 255, 255);
     background-image: linear-gradient(#cecece, white, white, white, #fad000, rgb(206, 206, 206));
@@ -14,6 +20,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 header h1 a {
@@ -49,6 +57,8 @@ a {
     width: 100%;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .infos {
@@ -56,6 +66,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .infos h3 {
@@ -66,7 +77,7 @@ a {
 
 .video {
     width: 640px;
-    height: 315px;
+    height: 360px;
     border-radius: 10px;
     border: none;
 } 
@@ -76,18 +87,22 @@ a {
     flex-direction: column;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.5);
-    /* -webkit-backdrop-filter: blur(1px); */
     backdrop-filter: blur(1px);
     border-radius: 32px;
-    padding: 20px 20px 10px 20px;
     height: 100%;
     box-shadow: 0 0 20px 10px #888888;
 }
 
+.container h2 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
 form {
     color: #000000;
-    margin: 5px 0px 5px 0px;
+    margin: 50px 0px 50px 0px;
     width: 50%;
+    font-weight: bold;
 }
 
 #button {
@@ -109,17 +124,16 @@ form {
     transform: scale(1.02);
 }
 
-input {
+.input {
     margin: 3%;
     text-align: center;
-    height: 20%;
+    height: 30px;
     width: 50%;
     font-family: 'Montserrat';
     border-top: none;
     border-left: none;
     border-right: none;
     background-color: transparent;
-
 }
 
 .imgform,
@@ -134,4 +148,11 @@ width: 10%;
     justify-content: space-around;
     border-radius: 30em;
     padding: 10px 10px 10px 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    width: 100%;
 }

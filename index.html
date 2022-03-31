@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="https://www.resilia.com.br/wp-content/themes/resiliaTheme/assets/images/favicon.jpeg">
     <link rel="stylesheet" href="./index.css">
     <title>Formulário Resilia</title>
 </head>
@@ -31,37 +32,39 @@
         </nav>
     </header>
     <div class="conteudo">
-            <div class="infos">
-                <div>
-                    <h3><strong>Aprenda TUDO o que precisa para começar a trabalhar como Dev Jr.!</strong></h3>
-                    <p>Aulas 100% online e ao vivo | 6 meses | + de 500h de conteúdo | Pague depois</p>
-                </div>
-                <div>
-                    <iframe class="video" src="https://www.youtube.com/embed/KJV8uhxaRl8"></iframe>
+        <div class="infos">
+            <div>
+                <h3><strong>Aprenda TUDO o que precisa para começar a trabalhar como Dev Jr.!</strong></h3>
+                <p>Aulas 100% online e ao vivo | 6 meses | + de 500h de conteúdo | Pague depois</p>
+            </div>
+            <div>
+                <iframe class="video" src="https://www.youtube.com/embed/KJV8uhxaRl8"></iframe>
+            </div>
+        </div>
+        <form>
+            <div class="container">
+                <h2>Formação Web Dev Resilia</h2>
+                <h3>Inscreva-se na lista de espera</h3><br>
+                <label class="label">Nome completo:</label>
+                <input class="input" type="text" name="nome" required placeholder="seu nome">
+                <label class="label">Data de Nascimento:</label>
+                <input class="input" type=date name="datanascimento" required>
+                <label class="label">CPF:</label>
+                <input class="input" type="text" name="cpf" required placeholder="000.000.000-00">
+                <label class="label">E-mail:</label>
+                <input class="input" type="email" name="email" required placeholder="seu@email">
+                <button id="button" type="submit" value="Enviar">Enviar</button>
+                <div class="icones">
+                    <img class="imgform" src="formulario-de-contato.png" alt="imagem formulário">
+                    <img class="imgideia" src="ideia.png" alt="imagem ideia">
+                    <img class="imgdragao" src="dragao.png" alt="dragão T17">
                 </div>
             </div>
-            <form>
-                
-                <div class="container">
-                    <h2>Formação Web Dev Resilia</h2>
-                    <h3>Inscreva-se na lista de espera</h3>
-                    <label class="label">Nome completo:</label>
-                    <input class="input" type="text" name="nome" required placeholder="seu nome">
-                    <label class="label">Data de Nascimento:</label>
-                    <input class="input" type=date name="datanascimento" required>
-                    <label class="label">CPF:</label>
-                    <input class="input" type="text" name="cpf" required placeholder="000.000.000-00">
-                    <label class="label">E-mail:</label>
-                    <input class="input" type="email" name="email" required placeholder="seu@email">
-                    <button id="button" type="submit" value="Enviar">Enviar</button>
-                    <div class="icones">
-                        <img class="imgform" src="formulario-de-contato.png" alt="imagem formulário">
-                        <img class="imgideia" src="ideia.png" alt="imagem ideia">
-                        <img class="imgdragao" src="dragao.png" alt="dragão T17">
-                    </div>
-                </div>
-            </form>
+        </form>
     </div>
+    <footer>
+        <span>Copyright © 2022 - Desenvolvido por Danylo Baziewicz</span>
+    </footer>
 </body>
 
 </html>
